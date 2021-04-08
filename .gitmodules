@@ -1,6 +1,6 @@
 [submodule "DocumentAnalyzerService"]
-    path = DocumentAnalyzerService
-    url = https://github.com/JoDaniel1412/DocumentAnalyzerService
+        path = DocumentAnalyzerService
+        url = https://github.com/JoDaniel1412/DocumentAnalyzerService
 [submodule "DocumentAnalyzerWeb"]
-    path = DocumentAnalyzerWeb
-    url = https://github.com/Fabelifer2797/DocumentAnalyzerWeb
+        path = DocumentAnalyzerWeb
+        url = https://github.com/Fabelifer2797/DocumentAnalyzerWeb
