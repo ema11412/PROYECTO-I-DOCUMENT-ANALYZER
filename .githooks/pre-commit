@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# Pre-commit hooks
+
+# Check branch name
+BRANCH_NAME_LENGTH=`git rev-parse --abbrev-ref HEAD | grep -E '^((feature|fix)(-[a-z0-9]+)+|main$)' | wc -c`
+
+if [ ${BRANCH_NAME_LENGTH} -eq 0 ] ; then
+  echo -e '\E[37;44m'"\033[1mERROR\033[0m in pre-commit hook: vim /export/web/.git/hooks/pre-commit"
+  echo "Branch name should be like t00000_blah_blah_CA - brand is two letters"
+  echo "edit regexp if you think something wrong"
+  echo "Skip pre-commit hooks with --no-verify (not recommended)."
+  exit 1
+fi
